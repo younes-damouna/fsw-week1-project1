@@ -46,10 +46,11 @@ header{
 
 .info{
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   left: 130px;
-  height: 100%;
-  width: 100%;
+}
+
+.info-box{
   max-height: 230px;
   padding: 9px;
   max-width: 550px;
@@ -65,4 +66,33 @@ header{
 
 .info p{
   color: rgb(187, 111, 12);
+}
+
+@media (max-width: 710px){
+  .info{
+    left: 22px;
+    max-width: 90%;
+  }
+  .info-box{
+    height: 230px;
+  }
+  .foreground{
+    height: 73%;
+    width: 100%;
+    top: -75px;
+    right: -7px;
+    /* filter: brightness(1.1); */
+    transform: translateZ(-3px) scale(0.95);
+  }
+}
+
+@media (max-width: 430px){
+  .foreground{
+    top: -120px;
+    transform: translateZ(-3px) scale(0.95);
+  }
+  .info{
+    bottom: 90px;
+    height: 275px;
+  }
 }
