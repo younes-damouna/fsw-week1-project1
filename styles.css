@@ -25,6 +25,20 @@ h1{
     background-attachment: fixed;
 }
 
+.parallax-2{
+    background: url(./assets/space1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-3{
+    background: url(./assets/space2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 h2{
     font-size: 32px;
     color:rgb(255, 255, 255);
@@ -40,4 +54,56 @@ p{
     text-align: justify;
     line-height: 30px;
     margin: 0 50px 40px;
+}
+
+p:nth-of-type(2),
+p:nth-of-type(3){
+    margin: 40px 50px;
+}
+
+/***** PlANETS STYLING ******/
+.planet-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.planet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.planet-section img{
+    width: 18rem;
+    height: 18rem;
+}
+
+.left{
+    flex: 1;
+    text-align: left;
+    margin-right: 6rem;
+}
+
+.right{
+    flex:2;
+    text-align: left;
+    margin-left: 6rem;
+}
+
+.planet-name{
+    margin: -1rem 4rem 2rem 0;
+    font-size: 2.8rem;
+}
+
+.planet-section ul {
+    list-style-type: disc;
+}
+
+.planet-section li {
+    font-size: 1.5rem; 
+    margin: 10px 0; 
+    color: white;
 }
