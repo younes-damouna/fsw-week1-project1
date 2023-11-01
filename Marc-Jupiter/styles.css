@@ -79,12 +79,12 @@ h1{
 }
 
 .info h1{
-  color: rgba(224, 169, 28, 0.829);
+  color: rgba(235, 171, 10, 0.993);
   margin-bottom: 10px ;
 }
 
 .info p{
-  color: rgb(187, 111, 12);
+  color: rgb(255, 145, 0);
 }
 
 /* --- End of Jupiter's Section ---  */
@@ -152,10 +152,19 @@ h1{
   display: flex;
   flex-direction: column;
   width: 80%;
+  height: 30%;
   padding: 10px;
   border: 3px solid transparent;
   border-radius: 5px;
   background-color: rgba(128, 128, 128, 0.151);
+}
+
+.saturn-section-info p{
+  color: rgba(22, 247, 255, 0.904);
+}
+
+.saturn-section-info h1{
+  color: rgba(22, 247, 255, 0.719);
 }
 
 
