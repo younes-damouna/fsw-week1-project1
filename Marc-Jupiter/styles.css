@@ -3,12 +3,16 @@
   box-sizing: border-box;
 }
 
+/* wrappers which will take the full height of the screen */
+
 .wrapper{
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden ;
   perspective: 10px;
 }
+
+/* header containing 2 images (foreground and background) and a section (info) */
 
 header{
   position: relative;
@@ -44,6 +48,8 @@ header{
   z-index: -1;
 }
 
+/* section inside header containing div (info-box), h1, and p */
+
 .info{
   position: absolute;
   bottom: 40px;
@@ -68,6 +74,7 @@ header{
   color: rgb(187, 111, 12);
 }
 
+
 @media (max-width: 710px){
   .info{
     left: 22px;
@@ -81,7 +88,6 @@ header{
     width: 100%;
     top: -75px;
     right: -7px;
-    /* filter: brightness(1.1); */
     transform: translateZ(-3px) scale(0.95);
   }
 }
@@ -96,3 +102,5 @@ header{
     height: 275px;
   }
 }
+
+/* --- End of Jupiter's Section --  */
