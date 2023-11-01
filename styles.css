@@ -39,25 +39,28 @@ h1{
 }
 
 .background{
-  height: 1200px;
+  height: 100%;
+  height: 2500px;
   width: 100%;
-  filter: brightness(0.7);
+  filter: brightness(0.6);
   transform: translateZ(-5px) scale(1.5);
+  z-index: 1;
 }
 
 .foreground{
   height: 100%;
   width: 100%;
   max-width: 800px;
-  top: -65px;
-  right: -10px; 
+  bottom: -60px;
+  right: 60px; 
   filter: brightness(1.1);
   transform: translateZ(-3px) scale(0.95);
+  z-index: 1;
 }
 
 .background, 
 .foreground{
-  position: absolute;
+  position: absolute;    
   object-fit: cover;
   z-index: -1;
 }
@@ -66,37 +69,32 @@ h1{
 
 .info{
   position: absolute;
-  bottom: -40px;
-  left: 120px;
-  z-index: 1;
+  top: 70px;
+  left: 60px;
 }
 
 .info-box{
   padding: 9px;
   max-width: 600px;
-  background-color: rgba(128, 128, 128, 0.212);
+  background-image: linear-gradient(rgba(87, 61, 12, 0.459), rgba(49, 73, 109, 0.514) 100%);
   border-radius: 5px;
 }
 
 .info h1{
-  color: rgba(235, 171, 10, 0.993);
+  color: rgba(230, 147, 23, 0.993);
   margin-bottom: 10px ;
 }
 
 .info p{
-  color: rgb(255, 145, 0);
+  color: rgb(228, 136, 16);
 }
 
 /* --- End of Jupiter's Section ---  */
 
 /* -- Seperator--  */
 
-.empty-div{
-  height: 100px;
-}
-
 .additional-info{
-  margin: 150px auto -100px auto;
+  margin: 100px auto -100px auto;
   height: 400px;   
   width: 100%;
 }
@@ -114,57 +112,33 @@ h1{
 
 /* --- Start of Saturn's Section --- */
 
-.saturn-section{
-  /* overflow-y: auto; */
-  overflow-x: hidden ;
-  perspective: 13px;
-}
 
-.background-saturn{
+.saturn-section{
+  perspective: 13px;
   height: 100%;
   width: 100%;
-  filter: brightness(1.2);
-  transform: translateZ(-6px) scale(1.5);
 }
 
 .foreground-saturn{
   position: absolute;
-  top: 80px;
-  left: -80px;
-  height: 100%;
+  top: -125px;
+  left: -152px;
   width: 100%;
-  max-height: 375px;
-  max-width: 950px;
-  filter: brightness(1.15);
-  transform: translateZ(-2px) scale(0.95);
-}
-
-.background-saturn, 
-.foreground-saturn{
+  max-width: 800px;
   object-fit: cover;
+  transform: translateZ(-5px) scale(1.2);
   z-index: -1;
 }
 
 .saturn-section-info{
   position: absolute;
-  bottom: -20px;
-  left: 150px;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 30%;
+  right: 100px;
+  border: 5px solid transparent;
+  width: 95%;
+  max-width: 600px;
   padding: 10px;
-  border: 3px solid transparent;
+  background-image: linear-gradient(rgba(87, 61, 12, 0.459), rgba(49, 73, 109, 0.514) 100%);
   border-radius: 5px;
-  background-color: rgba(128, 128, 128, 0.151);
-}
-
-.saturn-section-info p{
-  color: rgba(22, 247, 255, 0.904);
-}
-
-.saturn-section-info h1{
-  color: rgba(22, 247, 255, 0.719);
 }
 
 
@@ -179,16 +153,16 @@ h1{
   .info{
     left: 22px;
     bottom: 50px;
-    max-width: 90%;
   }
   .info-box{
-    height: 230px;
+    height: 42%;
+
   }
   .foreground{
     height: 73%;
     width: 100%;
-    top: -75px;
-    right: -7px;
+    top: 370px;
+    right: -20px;
     transform: translateZ(-3px) scale(0.95);
   }
 }
