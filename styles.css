@@ -33,32 +33,26 @@ body {
 
   }
 
-h2{
-    color: #c4c4c4f4;
-    text-align: center;
-}
 
 p {
   background-image: linear-gradient(white);
 }
 
-.sunt{
+.text{
+    padding: 20px 30px;
+    font-size: 24px;
+    border-radius: 25px;
+    font-family: monospace;
+    background-color: #00000055;
+    color:white;
+    text-align: center;
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color:white;
     z-index: -1;
 }
 
-.merct{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color:white;
-    z-index: -1;
-}
 
 .left{
     display:flex;
@@ -109,7 +103,7 @@ p {
 
   }
 
-  .mercury{
+  .mer1{
     transform: translateZ(-5px) scale(1);
     position: relative;
     height: 50%;
