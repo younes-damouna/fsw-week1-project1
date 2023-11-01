@@ -91,9 +91,10 @@ body{
     color: #fff;
 }
 .planet-description{
-    font-size: 20px;
-    word-spacing: 10px;
-    color: white;
+    font-size: 20px !important;
+    word-spacing: 10px !important;
+    color: white !important;
+    height: fit-content !important;
 }
 
 .rotate{
