@@ -22,16 +22,9 @@
   z-index: -2;
 }
 
-body {
-  background-image: url("assets/space1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateZ(-10px) scale(1);
-}
 
-p {
-  background-image: linear-gradient(white);
-}
+
+
 
 .text {
   padding: 20px 30px;
@@ -110,4 +103,126 @@ p {
   width: 40%;
   object-fit: contain;
   z-index: -2;
+}
+
+
+body{
+    background: #000000;
+}
+
+h1{
+    font-size: 120px;
+    text-align: center;
+    color:rgba(149, 149, 149, 0.751)
+}
+
+.parallax-inner{
+    padding: 10% 0;
+}
+
+.parallax-1{
+    background: url(./assets/space0.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-2{
+    background: url(./assets/space1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-3{
+    background: url(./assets/space2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2{
+    font-size: 32px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 20px 0 10px;
+}
+
+p{
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+    text-align: justify;
+    line-height: 30px;
+    margin: 0 50px 40px;
+}
+
+p:nth-of-type(2),
+p:nth-of-type(3){
+    margin: 40px 50px;
+}
+
+/***** PlANETS STYLING ******/
+.planet-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.planet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 3;
+}
+
+.planet-section img{
+    width: 18rem;
+    height: 18rem;
+}
+
+.left{
+    flex: 1;
+    text-align: left;
+    margin-right: 6rem;
+}
+
+.right{
+    flex:2;
+    text-align: left;
+    margin-left: 6rem;
+}
+
+.planet-name{
+    margin: -1rem 4rem 2rem 0;
+    font-size: 2.8rem;
+}
+
+.planet-section ul {
+    list-style-image: url(./assets/star0.png);
+}
+
+.planet-section li {
+    font-size: 1.5rem; 
+    margin: 10px 0; 
+    color: white;
+}
+
+.earth-rotate-animation {
+    width: 100%;
+    height: 100%;
+    animation: rotate 50s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
