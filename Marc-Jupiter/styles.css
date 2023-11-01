@@ -11,7 +11,7 @@ body{
 }
 
 p{
-  font-size: 22px;
+  font-size: 26px;
 }
 
 h1{
@@ -28,7 +28,7 @@ h1{
 
 /* header containing 2 images (foreground and background) and a section (info) */
 
-header{
+.parallax-header{
   position: relative;
   display: flex;
   justify-content: center;
@@ -97,7 +97,7 @@ header{
 
 .additional-info{
   margin: 150px auto -100px auto;
-  height: 500px;   
+  height: 400px;   
   width: 100%;
 }
 
@@ -108,43 +108,55 @@ header{
   text-align: center;
   height: 300px;
   padding: 20px;
-  background-image: linear-gradient(rgba(87, 61, 12, 0.726), rgb(14, 31, 56) 100%);
+  background-image: linear-gradient(rgba(87, 61, 12, 0.459), rgba(49, 73, 109, 0.514) 100%);
   word-spacing: 7px;
 }
 
 /* --- Start of Saturn's Section --- */
 
+.saturn-section{
+  /* overflow-y: auto; */
+  overflow-x: hidden ;
+  perspective: 13px;
+}
+
 .background-saturn{
   height: 100%;
   width: 100%;
-  /* filter: brightness(1.5); */
-  transform: translateZ(0px) scale(1);
+  filter: brightness(1.2);
+  transform: translateZ(-6px) scale(1.5);
 }
 
 .foreground-saturn{
-  height: 80px;
-  width: 80px;
-  /* filter: brightness(1.1); */
-  /* transform: translateZ(-3px) scale(0.95); */
+  position: absolute;
+  top: 80px;
+  left: -80px;
+  height: 100%;
+  width: 100%;
+  max-height: 375px;
+  max-width: 950px;
+  filter: brightness(1.15);
+  transform: translateZ(-2px) scale(0.95);
 }
 
 .background-saturn, 
 .foreground-saturn{
-  position: absolute;
   object-fit: cover;
   z-index: -1;
 }
 
-
-
-
-
-
-
-
-
-
-
+.saturn-section-info{
+  position: absolute;
+  bottom: -20px;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.151);
+}
 
 
 /* media queries */
