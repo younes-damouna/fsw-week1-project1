@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
+  
+  header {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -3;
+  }
+  
+ .parall{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -2;
+  }
+
+body {
+    background-image: url('assets/space1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateZ(-10px) scale(1);
+
+  }
+
+h2{
+    color: #c4c4c4f4;
+    text-align: center;
+}
+
+.sunt{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    z-index: -1;
+}
+
+.merct{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    z-index: -1;
+}
+
+.left{
+    display:flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -2;
+}
+
+
+.background {
+    transform: translateZ(-10px) scale(2);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -3;
+  }
+
+  .background1 {
+    transform: translateZ(-10px) scale(2);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+    z-index: -3;
+  }
+  
+.sun1 {
+    transform: translateZ(-5px) scale(1.5);
+    position: relative;
+    height: 50%;
+    width: 50%;
+    object-fit: none;
+    z-index: -2;
+
+  }
+
+  .sun2 {
+    transform: translateZ(-5px) scale(1);
+    position: relative;
+    height: 50%;
+    width: 50%;
+    object-fit: none;
+    z-index: -2;
+
+  }
+
+  .mercury{
+    transform: translateZ(-5px) scale(1);
+    position: relative;
+    height: 50%;
+    width: 50%;
+    object-fit: none;
+    z-index: -2;
+  }
+
+  .merc2{
+    transform: translateZ(-5px) scale(2);
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    object-fit: contain;
+    z-index: -2;
+  }
+
+
+  
+
